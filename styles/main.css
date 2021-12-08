@@ -147,7 +147,7 @@ main{
     color: #FFFFFF;
     background-image: url(../images/banner.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: 0 center;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-left: 100px;
@@ -529,3 +529,5 @@ main{
     margin-bottom: 10px;
     margin-top: 0;
 }
+
+/* Responsive */
