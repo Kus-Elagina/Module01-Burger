@@ -147,12 +147,9 @@ main{
     color: #FFFFFF;
     background-image: url(../images/banner.jpg);
     background-size: cover;
-    background-position: 0 center;
+    background-position: center center;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 766px;
-    padding-bottom: 129px;
+    padding: 101px 0 120px 101px;
     margin-bottom: 80px;
 }
 .banner-title{
@@ -185,6 +182,7 @@ main{
     line-height: 24px;
     margin-top:0;
     margin-bottom: 33px;
+    max-width: 320px;
 }
 .banner-link{
     font-weight: 700;
@@ -531,3 +529,45 @@ main{
 }
 
 /* Responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo{
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav{
+        gap: 22px;
+    }
+    .header-item{
+        flex-basis: 75.6%;
+    }
+    .bg{
+        margin-bottom: 72px;
+    }
+    .banner-box{
+    background-position: -80px center;
+    padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+    .footer{
+        padding-bottom: 71px;
+    }
+    .footer-box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: inherit;
+    }
+    .footer-list-tel li {
+        margin-left: 122px;
+    }
+    .button-up{
+        padding: 5px 10px;
+    }
+}
