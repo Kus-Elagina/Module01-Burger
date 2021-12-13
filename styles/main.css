@@ -103,6 +103,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 7px;
+    padding-right: 39px;
 }
 .breadcrumbs a {
     color: #DEDEDE;
@@ -140,7 +141,7 @@ header{
     margin: 0 auto;
 }
 main{
-    margin-top: 140px;
+    margin-top: 138px;
 }
 .banner-box{
     text-align: left;
@@ -300,12 +301,12 @@ main{
     color: #1E2F40;
 }
 .extra-menu{
-    margin-top:100px;
+    margin-top:103px;
 }
 .footer {
     background: #1E2F40;
     color: #fff;
-    padding-top: 117px;
+    padding-top: 120px;
     padding-bottom: 106px;
     margin-top: 140px;
 }
@@ -331,8 +332,7 @@ main{
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 19px;
-    margin-top: 0;
+    margin: 2px 22px 17px 0px
 }
 .footer-list li {
     margin-bottom: 9px;
@@ -414,8 +414,7 @@ main{
     font-weight: 800;
     text-transform: uppercase;
     line-height: 120px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 34px;
 }
 .content-title span {
     color: #FBB731;
@@ -423,13 +422,13 @@ main{
     font-weight: 700;
     line-height: 38px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .content-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     line-height: 1.4;
-    margin-bottom: 42px;
+    margin-bottom: 50px;
 }
 .content-link,
 .promo a {
@@ -530,6 +529,19 @@ main{
 
 /* Responsive */
 
+@media (min-width: 1001px) {
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+}
+
+
+@media (min-width: 766px) {
+    .header-burger {
+        display: none;
+    }
+}
+
 @media (max-width: 1000px) {
     .container {
         max-width: 738px;
@@ -552,6 +564,24 @@ main{
     background-position: -80px center;
     padding: 100px 40px 120px;
     }
+    .extra-menu{
+        overflow: hidden;
+        height: 558px;
+    }
+    .extra-menu .menu-grid{
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .extra-menu .menu-grid-item{
+        flex: 0 0 281px;
+    }
+    .extra-menu .menu-grid,
+    .extra-menu .menu-grid img {
+        height: 320px;
+    }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
@@ -564,10 +594,19 @@ main{
         flex-wrap: wrap;
         flex-direction: inherit;
     }
-    .footer-list-tel li {
-        margin-left: 122px;
-    }
     .button-up{
         padding: 5px 10px;
+    }
+    .footer-tel {
+        display: none;
+    }
+    .footer-list + .footer-list-tel {
+        display: block;
+    }
+}
+
+@media (max-width: 765px) {
+    nav {
+        display: none;
     }
 }
