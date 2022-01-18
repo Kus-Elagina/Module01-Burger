@@ -762,7 +762,7 @@ main{
     }
     .footer-box {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 30% 1fr;
         grid-template-areas: "logo tel" "link link" "info info";
         gap: 30px;
     }
@@ -796,6 +796,9 @@ main{
         font-size: 13px;
         line-height: 20px;
     }
+    .footer-tel {
+        padding-right: 15px;
+    }
     .footer-list-tel a {
         font-size: 18px;
     }
@@ -804,6 +807,9 @@ main{
     .banner-box {
         background-position: 20% center;
         margin-bottom: 53px;
+    }
+    .menu-grid {
+        gap: 25px 5px;
     }
     .menu-grid-cover {
         height: 53vw;
@@ -829,16 +835,33 @@ main{
         left: 21px;
     }
     .extra-menu {
-        margin-top: 60px;
+        margin-top: 64px;
+    }
+    .menu-header {
+        margin-bottom: 32px;
     }
     .extra-menu .menu-grid-cover {
         height: 54vw;
     }
+    .extra-menu .menu-grid-item {
+        flex: 0 0 41vw;
+    }
+    .footer {
+        margin-top: 38px;
+    }
     .footer-box {
-        grid-template-columns: 30% 1fr;
+        gap: 24px;
     }
     .footer-list-tel a {
         font-size: 20px;
-        line-height: 38px;
+        line-height: 23px;
+    }
+    .footer-tel {
+        padding-right: 0;
+    }
+}
+@media (max-width: 321px) {
+.footer-box {
+    gap: 12px;
     }
 }
