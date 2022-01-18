@@ -790,16 +790,55 @@ main{
     }
     .bg {
         padding: 58px 0px;
+        background-position: 20% center;
     }
     .menu-grid-title {
         font-size: 13px;
+        line-height: 20px;
     }
     .footer-list-tel a {
         font-size: 18px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 344px) {
     .banner-box {
-        background-position: 25% center;
+        background-position: 20% center;
+        margin-bottom: 53px;
+    }
+    .menu-grid-cover {
+        height: 53vw;
+    }
+    .menu-grid-cover img {
+        margin-bottom: 0;
+    }
+    .menu-grid-title {
+        margin-top: 7px;
+    }
+    .menu-grid-price {
+        font-size: 16px;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+    .menu-grid-btn {
+        padding: 10px 84px 10px 45px;
+        max-width: 129px;
+        margin: 0 auto;
+    }
+    .menu-grid-icon {
+        width: 16.6px;
+        left: 21px;
+    }
+    .extra-menu {
+        margin-top: 60px;
+    }
+    .extra-menu .menu-grid-cover {
+        height: 54vw;
+    }
+    .footer-box {
+        grid-template-columns: 30% 1fr;
+    }
+    .footer-list-tel a {
+        font-size: 20px;
+        line-height: 38px;
     }
 }
