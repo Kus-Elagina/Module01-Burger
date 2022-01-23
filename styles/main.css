@@ -660,12 +660,13 @@ main{
     .header {
         gap: 21px;
     }
-    .extra-menu .container {
-        padding-right: 0;
-    }
     .button-up.visible {
         display: none;
     }
+}
+@media (max-width: 696px) {
+    .footer-box {
+       flex-wrap: nowrap;
 }
 @media (max-width: 567px) {
     .header {
@@ -780,6 +781,11 @@ main{
     }
     .footer-item h2 {
         font-size: 18px;
+    }
+}
+@media (max-width: 381px) {
+.extra-menu {
+    height: 115vw;
     }
 }
 @media (max-width: 360px) {
