@@ -677,6 +677,9 @@ main{
         width: 116px;
         height: 37px;
     }
+    #modal {
+        margin: 0 auto 0;
+    }
     .breadcrumbs a {
         font-size: 14px;
     }
@@ -788,6 +791,7 @@ main{
     height: 115vw;
     }
 }
+
 @media (max-width: 360px) {
     .header-logo{
         width: 116px;
