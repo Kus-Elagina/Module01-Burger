@@ -667,6 +667,7 @@ main{
 @media (max-width: 696px) {
     .footer-box {
        flex-wrap: nowrap;
+    }
 }
 @media (max-width: 567px) {
     .header {
